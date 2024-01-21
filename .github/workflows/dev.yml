@@ -9,8 +9,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: run fauna_db_actions 
-        uses: Shadid12/fauna-action@0.0.3
+        uses: Shadid12/fauna-action@0.0.4
         with:
-          node-version: '20.x'
+          node-version: '20'
           fauna-secret-key: ${{ secrets.FAUNA_SECRET_KEY }}
   
