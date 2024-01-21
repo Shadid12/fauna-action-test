@@ -1,0 +1,16 @@
+name: Example Workflow Using My Action
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  example_job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: run fauna_db_actions 
+        uses: Shadid12/fauna-action@0.0.1
+        with:
+          node-version: '20.x'
+          fauna-secret-key: ${{ secrets.FAUNA_SECRET_KEY }}
+  
