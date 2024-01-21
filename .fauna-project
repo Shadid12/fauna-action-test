@@ -1,0 +1,5 @@
+default=mydev
+
+[environment.mydev]
+endpoint=cloud-global
+database=FSL
