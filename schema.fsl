@@ -10,3 +10,8 @@ collection User {
 function usersWithSameAddress (address) {
   User.where(.address == address)
 }
+
+@role(server)
+function usersWithSameLastName (lastname) {
+  User.where(.lastname == lastname)
+}
